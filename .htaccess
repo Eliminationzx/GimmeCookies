@@ -1,0 +1,5 @@
+Options -Indexes
+AddDefaultCharset UTF-8
+RewriteEngine on
+RewriteRule ^main$ ./?page=1 [L]
+RewriteRule ^cp$ ./?page=2 [L]
