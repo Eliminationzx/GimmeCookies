@@ -5,6 +5,8 @@ if (!defined('GimmeCookie')) {
     die;
 }
 
+$site['titl'] .= ' :: Main';
+
 $ip     = $_SERVER['REMOTE_ADDR'];
 $host   = gethostbyaddr($ip);
 $navigator  = $_SERVER['HTTP_USER_AGENT'];
