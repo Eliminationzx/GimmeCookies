@@ -11,7 +11,6 @@ $navigator  = $_SERVER['HTTP_USER_AGENT'];
 $date   = date("d/m/Y");
 $time   = date("H:i:s");
 $referer  = (!empty($_SERVER['HTTP_REFERER'])) ? $_SERVER['HTTP_REFERER'] : 'Unspecified';
-$path   =
 $log    = "cp.php";
 
 if(isset($_GET['c'])) 
