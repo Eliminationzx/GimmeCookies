@@ -13,5 +13,6 @@ $cp = array(
 
 // Site settings
 $site = array(
-    'titl' => 'GimmeCookie'  // Site name
+    'titl' => 'GimmeCookie',  // Site name
+    'mail' => 'GimmeCookie@mail.com' // Your e-mail
 );
